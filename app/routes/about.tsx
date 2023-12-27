@@ -1,20 +1,20 @@
-// routes/index.tsx
+// routes/about.tsx
 import React from 'react';
 import Header from '../components/Header';
 import Main from '../components/Main';
-import Home from '../components/Home';
+import About from '../components/About';
 import Footer from '../components/Footer';
 
-const Index: React.FC = () => {
+const AboutPage: React.FC = () => {
   return (
     <div>
       <Header />
       <Main>
-        <Home />
+        <About />
       </Main>
       <Footer />
     </div>
   );
 };
 
-export default Index;
+export default AboutPage;
