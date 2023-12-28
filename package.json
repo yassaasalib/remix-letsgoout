@@ -8,13 +8,16 @@
     "dev": "remix dev --manual",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
     "start": "remix-serve ./build/index.js",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "build:css": "node-sass ./styles -o ./app/styles --output-style compressed",
+    "dev:css": "npm run build:css && node-sass -rw ./styles -o ./app/styles"
   },
   "dependencies": {
     "@remix-run/css-bundle": "^2.4.1",
     "@remix-run/node": "^2.4.1",
     "@remix-run/serve": "^2.4.1",
     "isbot": "^3.6.8",
+    "node-sass": "^9.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

@@ -1,8 +1,24 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #f0f;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%; }
 
-body{
-	margin: 0;
-	padding: 0;
-	background: #f9f;
-	overflow-x: hidden;
-	-webkit-text-size-adjust: 100%;
-}
+@media (min-width: 0) {
+  .about {
+    float: left;
+    width: 360px;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    background: #f9f; } }
+
+@media (min-width: 375px) {
+  .about {
+    float: left;
+    width: 375px;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    background: #0ff; } }
