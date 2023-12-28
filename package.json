@@ -9,8 +9,9 @@
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
     "start": "remix-serve ./build/index.js",
     "typecheck": "tsc",
+
     "build:css": "node-sass ./styles -o ./app/styles --output-style compressed",
-    "dev:css": "npm run build:css && node-sass -rw ./styles -o ./app/styles"
+    "dev:css": "npm run build:css && node-sass -rw ./styles -o ./app/styles --output-style expanded"
   },
   "dependencies": {
     "@remix-run/css-bundle": "^2.4.1",
